@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/matrimony-machine-task/static/css/main.49c1f602.css",
+    "main.js": "/matrimony-machine-task/static/js/main.16bbd08d.js",
+    "static/js/787.c528bace.chunk.js": "/matrimony-machine-task/static/js/787.c528bace.chunk.js",
+    "static/media/male1.jpeg": "/matrimony-machine-task/static/media/male1.60fe3bd2d20747427c18.jpeg",
+    "static/media/Lilith Insko3.jpeg": "/matrimony-machine-task/static/media/Lilith Insko3.a5f5bc735671850d50dd.jpeg",
+    "static/media/Lilith Insko2.jpeg": "/matrimony-machine-task/static/media/Lilith Insko2.54e13ebc8c5c40415456.jpeg",
+    "static/media/Lilith Insko5.jpeg": "/matrimony-machine-task/static/media/Lilith Insko5.d4b12373b2e270b16768.jpeg",
+    "static/media/Lilith Insko4.jpeg": "/matrimony-machine-task/static/media/Lilith Insko4.c3651062249850f39fe4.jpeg",
+    "static/media/Lilith Insko1.webp": "/matrimony-machine-task/static/media/Lilith Insko1.d31b715ab197c2f0ae55.webp",
+    "index.html": "/matrimony-machine-task/index.html",
+    "main.49c1f602.css.map": "/matrimony-machine-task/static/css/main.49c1f602.css.map",
+    "main.16bbd08d.js.map": "/matrimony-machine-task/static/js/main.16bbd08d.js.map",
+    "787.c528bace.chunk.js.map": "/matrimony-machine-task/static/js/787.c528bace.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49c1f602.css",
+    "static/js/main.16bbd08d.js"
+  ]
+}
