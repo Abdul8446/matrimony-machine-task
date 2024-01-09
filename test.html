@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .hidden-div {
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+      transition: opacity 0.5s, height 0.5s;
+    }
+  </style>
+</head>
+<body>
+
+<button id="showButton">Show Div</button>
+<div id="hiddenDiv" class="hidden-div">
+  <!-- Your content goes here -->
+  <p>This is the hidden content.</p>
+</div>
+
+<script>
+  document.getElementById('showButton').addEventListener('click', function() {
+    var hiddenDiv = document.getElementById('hiddenDiv');
+    
+    // Toggle the class to change opacity and height
+    hiddenDiv.classList.toggle('hidden-div');
+
+    // Check if the div is visible or hidden and adjust the content accordingly
+    if (hiddenDiv.classList.contains('hidden-div')) {
+      document.getElementById('showButton').innerText = 'Show Div';
+    } else {
+      document.getElementById('showButton').innerText = 'Hide Div';
+    }
+  });
+</script>
+
+</body>
+</html>

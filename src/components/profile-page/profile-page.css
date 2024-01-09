@@ -1,0 +1,141 @@
+.profile-container {
+    /* display: flex; */
+    height: 100%;
+}
+
+.profile-left-section {
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    flex-direction: column;
+    border-right: 1px solid goldenrod;
+    position: fixed;
+}
+
+.profile-image-big {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.profile-image-small-section {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    overflow-x: auto;
+}
+
+.profile-image-small {
+    border-radius: 3px;
+}
+
+.button-area {
+    width: 85%;
+    height: 50px;
+    margin: 0 auto 10px auto;
+}
+
+.arrow-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.button-container {
+    position: relative;
+    width: 85%; 
+    margin: 10px auto;
+}  
+
+.profile-right-section {
+    overflow-y: auto;
+    margin-left: 50%;
+    flex: 1;
+    padding-top: 20vh;
+    padding-bottom: 50px
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600&family=Work+Sans:wght@300&display=swap');
+
+.profile-name {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: xxx-large;
+}
+
+.profile-basic-details {
+    display: flex;
+    height:8rem;
+    width: 70%;
+    margin: 70px auto;
+    justify-content: space-between;
+}
+
+.profile-basic-details-inner {
+    border: 1px solid goldenrod;
+    width:8rem;
+    height: 100%;
+    border-radius: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 1150px) {
+    .back-button {
+        margin-left: 2.5rem !important;
+        margin-top: 10px !important;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .back-button {
+        margin-left: 2.3rem !important;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .profile-container{
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .back-button {
+        margin-left: 2rem !important;
+    }
+    .profilte-container {
+        display: unset !important;
+    }
+    .profile-left-section {
+        min-width: 100% !important;
+        position: unset !important;
+        justify-content: unset;
+        border-right: unset;
+        min-height: unset;
+    }
+    .profile-right-section {
+        min-width: 100%;
+        margin-left: unset;
+        padding-top: unset !important;
+    }
+}
+
+

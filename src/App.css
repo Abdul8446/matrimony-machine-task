@@ -1,11 +1,17 @@
 .App {
   text-align: center;
+  background: #fdfbf6;
+  /* background: red; */
+  height: 100%;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  overflow-x: hidden;
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

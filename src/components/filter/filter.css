@@ -1,0 +1,56 @@
+.filter {
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    min-width: 16.75rem;
+    margin-left: 5rem;
+    background: white;
+    margin-top: 1.25rem;
+}
+
+.open-filter {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: white;
+    height:fit-content;
+    padding-bottom: 50px;
+    transition: 0.5s;
+    /* transition:height 0.5s ease-in-out,opacity 0.5s ease-in-out; */
+}
+
+.modal-heading {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Add this CSS in your styles or a separate stylesheet */
+
+@keyframes slideIn {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+}
+ 
+@media only screen and (max-width: 1000px) {
+  .modal-content {
+    animation: slideIn 0.5s ease;
+    /* Other styles for your modal content */
+    margin-top: 20px;
+    
+    background-color: white;
+    padding-bottom: 50px;
+  }
+}  
+  
+@media only screen and (max-width: 1150px) {
+    .filter {
+        min-width: 12rem; 
+        margin-left: 3rem
+    }
+}

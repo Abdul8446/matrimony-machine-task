@@ -1,0 +1,284 @@
+.container {
+    display: flex;
+    height: 100%;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    width: 100vw;
+    margin: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.card {
+    height: 210px;
+    background: white;
+    border-radius: 5px;
+    margin-left:5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display:flex;
+    margin-bottom: 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+} 
+
+.card:hover {
+    background: white;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.cardimage1 {
+    height: 100%;
+    /* width: 50%; */
+    /* background-size: cover;
+    background-position: center; */
+    margin-left: 10px;
+    border-radius: 3px;
+}
+
+.cardimage2 {
+    height: 100%;
+    /* width: 50%; */
+    /* background-size: cover;
+    background-position: center; */
+    margin-left: 10px;
+    border-radius: 3px;
+}
+
+.card-right-side {
+    height: 100%;
+    flex-grow: 1;
+    margin-left: 10px; 
+    margin-right: 10px;  
+}
+
+.card-favorite {
+    display: flex;
+    justify-content: right;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600&family=Work+Sans:wght@300&display=swap');
+
+.name {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 25px;
+    display: flex;
+    padding-left: 15px;
+    margin-bottom: 15px
+}
+
+.other-details {
+    /* display: flex; */
+    font-size: x-large;
+    font-weight: 100;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.other-details-items {
+    display: inline-block;
+    padding: 5px 5px;
+    background-color: #4caf50;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    margin-right: 5px;
+    white-space: nowrap;
+}
+
+.card-bottom {
+    margin-left: 15px;
+    margin-top: 20px
+}
+
+.outlined-button {
+    display: inline-block;
+    padding: 5px 11px;
+    border: 1px solid #7851f7;
+    color: #7851f7;
+    text-decoration: none;
+    border-radius: 999px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 5px;
+    white-space: nowrap;
+    margin-bottom: 5px;
+}
+
+.outlined-button:hover {
+    background-color: #7851f7; 
+    color: #ffffff; 
+}
+
+/* .filter {
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    min-width: 16.75rem;
+    margin-left: 5rem;
+    background: white;
+    margin-top: 1.25rem;
+} */
+
+.matches-header {
+    display: flex;
+    justify-content: left;
+    margin-left: 5rem;
+}
+
+@media only screen and (min-width: 1201px) {
+    /* Your styles for a viewport size greater than 1200px go here */
+    .card-bottom {
+        display: flex;
+    }
+    .other-details {
+        display: flex;
+    }
+    
+}
+
+@media only screen and (min-width: 1000px) {
+    .filters-header {
+        display:none;
+    }
+}    
+
+@media only screen and (max-width: 1150px) {
+    /* Your styles for a viewport size under 1200px go here */
+    .card {
+        flex-direction: column;
+        height:32rem;
+        width:18rem;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .cardimage1 {
+        width: 100%;
+        height:auto;
+        margin:0;
+    }
+    .cardimage2 { 
+        width: 100%;
+        height:auto;
+        margin:0;
+    }
+    .name {
+       justify-content: center;
+    }
+    .card-favorite {
+        padding-top: 10px;
+    }
+    .card-container {
+        min-width: 65rem;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .card {
+        width: 16rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .filter {
+        display: none;
+    }
+    .card-container {
+        max-width: 85%;
+        min-width: auto;
+        justify-content: space-between;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0;
+    }
+    .matches-right-section {
+        margin-right: unset !important;
+    }
+    .card {
+        margin-left: unset;
+        width: 45%;
+    }
+    .matches-header {
+        margin: auto;
+    }
+    .pagination {
+        margin-left: auto !important;
+        margin-right: auto;
+    }
+    .filters-header {  
+        display:block;
+        width: 100%;
+        background: rgba(199, 150, 150, 0.74);
+        text-align: center;
+        font-weight: bold;
+        color: rgb(121, 30, 30);
+        margin: 1px;
+    } 
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 100%;
+        height: unset;
+        padding-bottom: 50px;
+    }
+    .matches-header {
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .card {
+        width: 100%;
+    }
+    .matches-header {
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .card {
+        width: 100%;
+    }
+    .name {
+        font-size: 25px;
+    }
+    .filter-heading {
+        font-size: 25px;
+    }
+    .matches-header {
+        margin: auto;
+    }
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.matches-right-section {
+    display: grid;
+    flex-grow: 1;
+    margin-right: 5rem;
+}
+
+.pagination {
+    margin-left:5rem;
+}
+
+
+/* 
+.open-filter {
+    min-width: 100%;
+    background: white;
+    height:fit-content;
+    padding-bottom: 50px;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition:height 0.5s ease-in-out,opacity 0.5s ease-in-out;
+} */
+
